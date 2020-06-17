@@ -1,0 +1,225 @@
+/*   
+Theme Name: Tsvet
+Theme URI: tsvet-tsvet.ru
+Description: Тема для цветочного магазина "TSVET"
+Author: Sergei Solntsev
+Author URI: http://bublik.site
+Version: 1.0
+*/
+
+* {
+	font-family: 'Roboto', sans-serif;
+	scroll-behavior: smooth;
+}
+
+.menu-item a, .menu-item a:hover {
+	color: #fff;
+}
+
+#menu-osnovnoe-menyu a {
+	font-size: 20px;
+}
+
+.font-family-lora {
+	font-family: 'Lora', serif;
+}
+
+#content h1 {
+	font-size: 38px;
+}
+
+.bg-dark {
+	background-color: #243238;
+}
+
+.text-pink {
+	color: #F74860;
+}
+
+.btn-pink {
+	background-color: #F74860;
+	color: #fff;
+	padding: .5rem 2rem !important;
+}
+
+.btn-pink:hover {
+	color: #fff !important;
+}
+
+.nbs-flexisel-item img {
+	border-radius: 8px;
+}
+
+.caldera-grid input.form-control, .caldera-grid textarea.form-control {
+	border: 1px solid #767676;
+	border-radius: 8px;
+	color: #767676;
+	font-size: 17px;
+}
+
+.caldera-grid input.form-control {
+	padding: 1.1rem 1.3rem;
+	margin-bottom: 21px;
+}
+
+
+.caldera-grid input.btn {
+	border-radius: 8px;
+}
+
+.carousel-indicators {
+	position: relative;
+	margin-top: 1rem;
+}
+
+.carousel-indicators li {
+	width: 100px;
+	height: auto;
+	text-indent: unset;
+	border: 4px solid transparent;
+}
+
+.carousel-indicators li.active {
+	border: 4px solid #F74860;
+}
+
+.carousel-indicators li img {
+	width: 100%;
+}
+
+a.no-link {
+	color: unset;
+	text-decoration: none;
+}
+
+.modal-content {
+	border: none;
+	border-radius: 18px;
+}
+
+.modal-body p {
+	font-size: 15px;
+	line-height: 22px;
+	color: #767676;
+}
+
+.modal-header, .modal-footer {
+	border: none;
+}
+
+#menuCatalog, #menuMain {
+	display: none;
+}
+
+@media screen and (max-width: 990px) {
+
+	header {
+		background-position: left;
+		background-size: 150% !important;
+		background-position-y: -30px;
+		background-position-x: -50px;
+		position: fixed;
+	}
+
+	header img.mx-auto {
+		height: 100px;
+	}
+
+	footer > div > .d-flex {
+		display: block !important;
+    	text-align: center;
+	}
+
+	footer .justify-content-between {
+		justify-content: space-around!important;
+	}
+
+	.modal-content {
+		padding-right: 1rem !important;
+		padding-left: 1rem !important;
+		padding-top: 0rem !important;
+	}
+
+	.carousel-indicators li {
+		width: 10px;
+		height: 10px;
+		border-radius: 10px;
+		background-color: #767676;
+		margin: 1px;
+		opacity: 1;
+	}
+
+	.carousel-indicators li.active {
+		border-color: transparent;
+		background-color: #F74860;
+	}
+
+	.modal-body h1 {
+		font-size: 28px !important;
+		margin-bottom: 0;
+	}
+
+	.modal-body button.btn-pink {
+		font-size: 14px !important;
+	}
+
+	#mobile-menu {
+		justify-content: space-between !important;
+	}
+
+	#mobile-menu a {
+		transform: unset !important;
+	}
+
+	#menuCatalog, #menuMain {
+		z-index: 5;
+		height: 100vh;
+		width: 100vw;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image: url('//tsvet-tsvet.ru/wp-content/themes/tsvet/images/bg-menu.png');
+		background-position: center;
+		background-size: cover;
+	}
+
+	#menuCatalog {
+		transform: translateX(-100vw);
+		display: block;
+	}
+
+	#menuMain {
+		transform: translateX(100vw);
+		display: none;
+	}
+
+	#closeMenuCatalog {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+	}
+
+	#closeMenuMain {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+	}
+
+	#menuMain #menu-osnovnoe-menyu-1 li, #menuCatalog li {
+		padding: 20px 5px;
+		border-top: 1px solid #fff;
+	}
+
+	#menuMain #menu-osnovnoe-menyu-1 li:first-child, #menuCatalog li:first-child {
+		border: none;
+	}
+
+	#menuMain #menu-osnovnoe-menyu-1 a, #menuCatalog a {
+		font-size: 26px;
+		text-transform: lowercase;
+	}
+
+	.center-in-mobile {
+		text-align: center;
+	}
+}
